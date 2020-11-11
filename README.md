@@ -11,7 +11,7 @@ The STL contains sequence containers and associative containers. The containers 
 <br>
 The array is a container for constant size arrays. This container wraps around fixed size arrays and also doesn’t loose the information of its length when decayed to a pointer.
 In order to utilize array, we need to include the array header:<br>
- <b>#include <array> </b>
+ <b>#include<array></b>
 <br>
  <br>
  For Better Understanding refer to STD_ARRAy.CPP<br><br>
