@@ -22,13 +22,13 @@ For Better Understanding refer to Vector1.CPP and Vector2.CPP<br><br>
 <b>4.Set</b><br>
 Sets are a type of associative containers in which each element has to be unique, because the value of the element identifies it. The value of the element cannot be modified once it is added to the set, though it is possible to remove and add the modified value of that element. <br><br>
 For Better Understanding refer to Set.CPP and Set2.CPP<br><br>
-<b>Multiset</b><br>
+<b>5.Multiset</b><br>
 Multisets are containers that store elements following a specific order, and where multiple elements can have equivalent values.
 <br>
 In a multiset, the value of an element also identifies it (the value is itself the key, of type T). The value of the elements in a multiset cannot be modified once in the container (the elements are always const), but they can be inserted or removed from the container.
 <br>
 Internally, the elements in a multiset are always sorted following a specific strict weak ordering criterion indicated by its internal comparison object (of type Compare).
-<br>
 multiset containers are generally slower than unordered_multiset containers to access individual elements by their key, but they allow the direct iteration on subsets based on their order.
-<br>
 Multisets are typically implemented as <b>binary search trees</b>.<br><br>
+For Better Understanding refer to multiset and multiset2<br><br>
+
