@@ -41,6 +41,15 @@ typedef pair<const Key, T> value_type;
 <br><br>
 Internally, the elements in a map are always sorted by its key following a specific strict weak ordering criterion indicated by its internal comparison object (of type Compare).
 map containers are generally slower than unordered_map containers to access individual elements by their key, but they allow the direct iteration on subsets based on their order.The mapped values in a map can be accessed directly by their corresponding key using the bracket operator ((operator[]).
-
 Maps are typically implemented as <b>binary search trees</b>.<br><br>
 For Better Understanding refer to Map.cpp and Map2.cpp<br><br>
+<b>7.MultiMap</b><br>
+Multimaps are associative containers that store elements formed by a combination of a key value and a mapped value, following a specific order, and where multiple elements can have equivalent keys.
+In a multimap, the key values are generally used to sort and uniquely identify the elements, while the mapped values store the content associated to this key. The types of key and mapped value may differ, and are grouped together in member type value_type, which is a pair type combining both:
+<br><br>
+typedef pair<const Key, T> value_type;
+<br><br>
+Internally, the elements in a multimap are always sorted by its key following a specific strict weak ordering criterion indicated by its internal comparison object (of type Compare).<br>
+<br>
+For Better Understanding refer to multimap.cpp<br><br>
+
