@@ -52,4 +52,7 @@ typedef pair<const Key, T> value_type;
 Internally, the elements in a multimap are always sorted by its key following a specific strict weak ordering criterion indicated by its internal comparison object (of type Compare).<br>
 <br>
 For Better Understanding refer to multimap.cpp<br><br>
+<b>8.Emplace</b><br>
+ Takes advantage of the rvalue reference to use the actual objects that you have already created. This means that no copy or move constructor is called, good for LARGE objects! O(log(N)) time.<br><br>
+ For Better Understanding refer to emplace.cpp<br><br>
 
