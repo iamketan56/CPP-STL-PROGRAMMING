@@ -55,4 +55,10 @@ For Better Understanding refer to multimap.cpp<br><br>
 <b>8.Emplace</b><br>
  Takes advantage of the rvalue reference to use the actual objects that you have already created. This means that no copy or move constructor is called, good for LARGE objects! O(log(N)) time.<br><br>
  For Better Understanding refer to emplace.cpp<br><br>
+<b>9.Forward List</b><br>
+Forward list in STL implements singly linked list. Introduced from C++11, forward list are useful than other containers in insertion, removal and moving operations (like sort) and allows time constant insertion and removal of elements.
+<br>
+Forward List is preferred over list when only forward traversal is required (same as singly linked list is preferred over doubly linked list) as we can save space. Some example cases are, chaining in hashing, adjacency list representation of graph, etc.
+<br><br>
+ For Better Understanding refer to ForwardList.cpp<br><br>
 
