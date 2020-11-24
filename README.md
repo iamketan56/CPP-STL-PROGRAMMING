@@ -19,3 +19,6 @@ Vectors are same as dynamic arrays with the ability to resize itself automatical
 
 For Better Understanding refer to Vector1.CPP and Vector2.CPP<br><br>
  
+<b>4.Set</b><br>
+Sets are a type of associative containers in which each element has to be unique, because the value of the element identifies it. The value of the element cannot be modified once it is added to the set, though it is possible to remove and add the modified value of that element. <br><br>
+For Better Understanding refer to Set.CPP and Set2.CPP<br><br>
