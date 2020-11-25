@@ -75,4 +75,10 @@ Pair is used to combine together two values which may be different in type. Pair
  pair (data_type1, data_type2) Pair_name
 <br><br>
  For Better Understanding refer to Pair.cpp<br><br>
+ <b>12.Queue</b><br>
+ queues are a type of container adaptor, specifically designed to operate in a FIFO context (first-in first-out), where elements are inserted into one end of the container and extracted from the other.
+<br>
+queues are implemented as containers adaptors, which are classes that use an encapsulated object of a specific container class as its underlying container, providing a specific set of member functions to access its elements. Elements are pushed into the "back" of the specific container and popped from its "front".
+ <br><br>
+ For Better Understanding refer to Queue.cpp<br><br>
  
