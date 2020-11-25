@@ -68,5 +68,11 @@ They are very similar to forward_list: The main difference being that forward_li
 <br>
 Compared to other base standard sequence containers (array, vector and deque), lists perform generally better in inserting, extracting and moving elements in any position within the container for which an iterator has already been obtained, and therefore also in algorithms that make intensive use of these, like sorting algorithms.<br><br>
  For Better Understanding refer to List.cpp<br><br>
-
-
+<b>11.Pair</b><br>
+The pair container is a simple container defined in <utility> header consisting of two data elements or objects. <br>
+The first element is referenced as ‘first’ and the second element as ‘second’ and the order is fixed (first, second).
+Pair is used to combine together two values which may be different in type. Pair provides a way to store two heterogeneous objects as a single unit.<br><br>
+ pair (data_type1, data_type2) Pair_name
+<br><br>
+ For Better Understanding refer to Pair.cpp<br><br>
+ 
