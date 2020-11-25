@@ -61,4 +61,12 @@ Forward list in STL implements singly linked list. Introduced from C++11, forwar
 Forward List is preferred over list when only forward traversal is required (same as singly linked list is preferred over doubly linked list) as we can save space. Some example cases are, chaining in hashing, adjacency list representation of graph, etc.
 <br><br>
  For Better Understanding refer to ForwardList.cpp<br><br>
+ <b>10.List</b><br>
+ Lists are sequence containers that allow constant time insert and erase operations anywhere within the sequence, and iteration in both directions.
+List containers are implemented as doubly-linked lists; Doubly linked lists can store each of the elements they contain in different and unrelated storage locations. The ordering is kept internally by the association to each element of a link to the element preceding it and a link to the element following it.
+They are very similar to forward_list: The main difference being that forward_list objects are single-linked lists, and thus they can only be iterated forwards, in exchange for being somewhat smaller and more efficient.
+<br>
+Compared to other base standard sequence containers (array, vector and deque), lists perform generally better in inserting, extracting and moving elements in any position within the container for which an iterator has already been obtained, and therefore also in algorithms that make intensive use of these, like sorting algorithms.<br><br>
+ For Better Understanding refer to List.cpp<br><br>
+
 
