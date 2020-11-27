@@ -90,7 +90,7 @@ Specific libraries may implement deques in different ways, generally as some for
 <br>
 Therefore, they provide a functionality similar to vectors, but with efficient insertion and deletion of elements also at the beginning of the sequence, and not only at its end. But, unlike vectors, deques are not guaranteed to store all its elements in contiguous storage locations: accessing elements in a deque by offsetting a pointer to another element causes undefined behavior.<br><br>
  For Better Understanding refer to Deque.cpp<br><br>
- <b>Priority queue</b><br>
+ <b>14.Priority queue</b><br>
 Priority queues are a type of container adaptors, specifically designed such that its first element is always the greatest of the elements it contains, according to some strict weak ordering criterion.<br>
 This context is similar to a heap, where elements can be inserted at any moment, and only the max heap element can be retrieved (the one at the top in the priority queue).
 <br>
