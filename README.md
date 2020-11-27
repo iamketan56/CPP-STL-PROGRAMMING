@@ -102,4 +102,13 @@ stacks are implemented as container adaptors, which are classes that use an enca
 <br><br>
 
 For Better Understanding refer to Stack.cpp<br><br>
+<b>16.Unordered sets</b><br>
+Unordered sets are containers that store unique elements in no particular order, and which allow for fast retrieval of individual elements based on their value.
+In an unordered_set, the value of an element is at the same time its key, that identifies it uniquely. Keys are immutable, therefore, the elements in an unordered_set cannot be modified once in the container - they can be inserted and removed, though.
+<br>
+Internally, the elements in the unordered_set are not sorted in any particular order, but organized into buckets depending on their hash values to allow for fast access to individual elements directly by their values (with a constant average time complexity on average).
+<br>
+unordered_set containers are faster than set containers to access individual elements by their key, although they are generally less efficient for range iteration through a subset of their elements.
+<br><br>
+For Better Understanding refer to unorder_set.cpp<br><br>
 
