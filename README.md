@@ -98,7 +98,8 @@ Priority queues are implemented as container adaptors, which are classes that us
 <br><br>
  For Better Understanding refer to Priority_queue & Priority_queue1.cpp<br><br>
  <b>15.Stack</b><br>
-stacks are implemented as container adaptors, which are classes that use an encapsulated object of a specific container class as its underlying container, providing a specific set of member functions to access its elements. Elements are pushed/popped from the "back" of the specific container, which is known as the top of the stack.<br><br>
- For Better Understanding refer to Stack.cpp<br><br>
+stacks are implemented as container adaptors, which are classes that use an encapsulated object of a specific container class as its underlying container, providing a specific set of member functions to access its elements. Elements are pushed/popped from the "back" of the specific container, which is known as the top of the stack.The underlying container may be any of the standard container class templates or some other specifically designed container class.
+<br><br>
 
-The underlying container may be any of the standard container class templates or some other specifically designed container class.
+For Better Understanding refer to Stack.cpp<br><br>
+
