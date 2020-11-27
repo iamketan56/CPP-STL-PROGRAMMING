@@ -37,6 +37,7 @@ Maps are associative containers that store elements formed by a combination of a
 <br>
 In a map, the key values are generally used to sort and uniquely identify the elements, while the mapped values store the content associated to this key. The types of key and mapped value may differ, and are grouped together in member type value_type, which is a pair type combining both:
 <br><br>
+<b>Syntax</b><br>
 typedef pair<const Key, T> value_type;
 <br><br>
 Internally, the elements in a map are always sorted by its key following a specific strict weak ordering criterion indicated by its internal comparison object (of type Compare).
@@ -47,6 +48,7 @@ For Better Understanding refer to Map.cpp and Map2.cpp<br><br>
 Multimaps are associative containers that store elements formed by a combination of a key value and a mapped value, following a specific order, and where multiple elements can have equivalent keys.
 In a multimap, the key values are generally used to sort and uniquely identify the elements, while the mapped values store the content associated to this key. The types of key and mapped value may differ, and are grouped together in member type value_type, which is a pair type combining both:
 <br><br>
+<b>Syntax</b><br>
 typedef pair<const Key, T> value_type;
 <br><br>
 Internally, the elements in a multimap are always sorted by its key following a specific strict weak ordering criterion indicated by its internal comparison object (of type Compare).<br>
@@ -61,4 +63,32 @@ Forward list in STL implements singly linked list. Introduced from C++11, forwar
 Forward List is preferred over list when only forward traversal is required (same as singly linked list is preferred over doubly linked list) as we can save space. Some example cases are, chaining in hashing, adjacency list representation of graph, etc.
 <br><br>
  For Better Understanding refer to ForwardList.cpp<br><br>
+ <b>10.List</b><br>
+ Lists are sequence containers that allow constant time insert and erase operations anywhere within the sequence, and iteration in both directions.
+List containers are implemented as doubly-linked lists; Doubly linked lists can store each of the elements they contain in different and unrelated storage locations. The ordering is kept internally by the association to each element of a link to the element preceding it and a link to the element following it.
+They are very similar to forward_list: The main difference being that forward_list objects are single-linked lists, and thus they can only be iterated forwards, in exchange for being somewhat smaller and more efficient.
+<br>
+Compared to other base standard sequence containers (array, vector and deque), lists perform generally better in inserting, extracting and moving elements in any position within the container for which an iterator has already been obtained, and therefore also in algorithms that make intensive use of these, like sorting algorithms.<br><br>
+ For Better Understanding refer to List.cpp<br><br>
+<b>11.Pair</b><br>
+The pair container is a simple container defined in <utility> header consisting of two data elements or objects. <br>
+The first element is referenced as ‘first’ and the second element as ‘second’ and the order is fixed (first, second).
+Pair is used to combine together two values which may be different in type. Pair provides a way to store two heterogeneous objects as a single unit.<br><br>
+ pair (data_type1, data_type2) Pair_name
+<br><br>
+ For Better Understanding refer to Pair.cpp<br><br>
+ <b>12.Queue</b><br>
+ queues are a type of container adaptor, specifically designed to operate in a FIFO context (first-in first-out), where elements are inserted into one end of the container and extracted from the other.
+<br>
+queues are implemented as containers adaptors, which are classes that use an encapsulated object of a specific container class as its underlying container, providing a specific set of member functions to access its elements. Elements are pushed into the "back" of the specific container and popped from its "front".
+ <br><br>
+ For Better Understanding refer to Queue.cpp<br><br>
+ <b>13.Deque</b><br>
+ deque (usually pronounced like "deck") is an irregular acronym of double-ended queue. Double-ended queues are sequence containers with dynamic sizes that can be expanded or contracted on both ends (either its front or its back).
+<br>
+Specific libraries may implement deques in different ways, generally as some form of dynamic array. But in any case, they allow for the individual elements to be accessed directly through random access iterators, with storage handled automatically by expanding and contracting the container as needed.
+<br>
+Therefore, they provide a functionality similar to vectors, but with efficient insertion and deletion of elements also at the beginning of the sequence, and not only at its end. But, unlike vectors, deques are not guaranteed to store all its elements in contiguous storage locations: accessing elements in a deque by offsetting a pointer to another element causes undefined behavior.<br><br>
+ For Better Understanding refer to Deque.cpp<br><br>
+ 
 
