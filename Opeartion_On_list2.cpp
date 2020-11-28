@@ -43,4 +43,12 @@ int main()
     {
         cout << ml << " ";
     }
+    cout << endl;
+    //Unique
+    std::list<int> List4 = {1, 2, 3, 1, 2, 3, 1, 3, 2, 4, 3, 5};
+    List4.unique();
+    for (auto &ul : List4)
+    {
+        cout << ul << " ";
+    }
 }
