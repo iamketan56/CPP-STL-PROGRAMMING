@@ -128,4 +128,10 @@ Internally, the elements in the unordered_map are not sorted in any particular o
 
 unordered_map containers are faster than map containers to access individual elements by their key, although they are generally less efficient for range iteration through a subset of their elements.<br><br>
 For Better Understanding refer to unorder_map.cpp<br><br>
-
+<b>Unordered multimap</b><br>
+Unordered multimaps are associative containers that store elements formed by the combination of a key value and a mapped value, much like unordered_map containers, but allowing different elements to have equivalent keys.
+<br>
+In an unordered_multimap, the key value is generally used to uniquely identify the element, while the mapped value is an object with the content associated to this key. Types of key and mapped value may differ.
+<br>
+Internally, the elements in the unordered_multimap are not sorted in any particular order with respect to either their key or mapped values, but organized into buckets depending on their hash values to allow for fast access to individual elements directly by their key values (with a constant average time complexity on average).<br><br>
+For Better Understanding refer to unorder_multimap.cpp<br><br>
