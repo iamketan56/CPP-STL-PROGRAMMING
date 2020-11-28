@@ -90,5 +90,25 @@ Specific libraries may implement deques in different ways, generally as some for
 <br>
 Therefore, they provide a functionality similar to vectors, but with efficient insertion and deletion of elements also at the beginning of the sequence, and not only at its end. But, unlike vectors, deques are not guaranteed to store all its elements in contiguous storage locations: accessing elements in a deque by offsetting a pointer to another element causes undefined behavior.<br><br>
  For Better Understanding refer to Deque.cpp<br><br>
- 
+ <b>14.Priority queue</b><br>
+Priority queues are a type of container adaptors, specifically designed such that its first element is always the greatest of the elements it contains, according to some strict weak ordering criterion.<br>
+This context is similar to a heap, where elements can be inserted at any moment, and only the max heap element can be retrieved (the one at the top in the priority queue).
+<br>
+Priority queues are implemented as container adaptors, which are classes that use an encapsulated object of a specific container class as its underlying container, providing a specific set of member functions to access its elements. Elements are popped from the "back" of the specific container, which is known as the top of the priority queue.
+<br><br>
+ For Better Understanding refer to Priority_queue & Priority_queue1.cpp<br><br>
+ <b>15.Stack</b><br>
+stacks are implemented as container adaptors, which are classes that use an encapsulated object of a specific container class as its underlying container, providing a specific set of member functions to access its elements. Elements are pushed/popped from the "back" of the specific container, which is known as the top of the stack.The underlying container may be any of the standard container class templates or some other specifically designed container class.
+<br><br>
+
+For Better Understanding refer to Stack.cpp<br><br>
+<b>16.Unordered sets</b><br>
+Unordered sets are containers that store unique elements in no particular order, and which allow for fast retrieval of individual elements based on their value.
+In an unordered_set, the value of an element is at the same time its key, that identifies it uniquely. Keys are immutable, therefore, the elements in an unordered_set cannot be modified once in the container - they can be inserted and removed, though.
+<br>
+Internally, the elements in the unordered_set are not sorted in any particular order, but organized into buckets depending on their hash values to allow for fast access to individual elements directly by their values (with a constant average time complexity on average).
+<br>
+unordered_set containers are faster than set containers to access individual elements by their key, although they are generally less efficient for range iteration through a subset of their elements.
+<br><br>
+For Better Understanding refer to unorder_set.cpp<br><br>
 
