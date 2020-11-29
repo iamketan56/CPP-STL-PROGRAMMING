@@ -30,6 +30,8 @@ int main()
     it = dqu.insert(it, 10);
     print(dqu);
     cout << endl;
-    dqu.erase(dqu.begin() + 5);
+    dqu.erase(dqu.begin() + 3);
     print(dqu);
+
+    dqu.clear();
 }
