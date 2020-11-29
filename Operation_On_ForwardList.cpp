@@ -47,6 +47,9 @@ int main()
         cout << el << " ";
     }
     cout << endl;
+
+    //erase after
+    fl.erase_after(fl.begin());
     //remove
     fl.remove(4);
     //remove if
