@@ -20,8 +20,8 @@ int main()
 
     // second insert function version (with hint position):
     std::map<char, int>::iterator it = mymap.begin();
-    mymap.insert(it, std::pair<char, int>('b', 300)); // max efficiency inserting
-    mymap.insert(it, std::pair<char, int>('c', 400)); // no max efficiency inserting
+    mymap.insert(it, std::pair<char, int>('b', 300));
+    mymap.insert(it, std::pair<char, int>('c', 400));
 
     // third insert function version (range insertion):
     std::map<char, int> anothermap;
