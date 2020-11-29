@@ -12,6 +12,7 @@ void print(std::stack<int> stk)
 int main()
 {
     std::stack<int> Stack;
+    std::stack<int> Stack1;
     Stack.push(1);
     Stack.push(2);
     Stack.push(3);
@@ -19,5 +20,8 @@ int main()
     print(Stack);
     cout << endl;
     cout << Stack.top();
+    cout << endl;
     cout << Stack.size();
+    Stack1.swap(Stack);
+    print(Stack1);
 }
