@@ -25,6 +25,13 @@ int main()
     std::forward_list<int> fl1;
     fl1.assign({11, 12, 13, 14, 15});
 
+    //insertafter
+    fl1.insert_after(fl1.begin(), 10);
+    for (auto &el : fl1)
+    {
+        cout << el << " ";
+    }
+
     //splice after
     fl.splice_after(fl.begin(), fl1);
     for (auto &el : fl)
@@ -48,4 +55,5 @@ int main()
     {
         cout << el << " ";
     }
+    cout << endl;
 }
