@@ -19,4 +19,7 @@ int main()
     que.pop();
     que.push(5);
     print(que);
+    cout << que.size();
+    cout << endl;
+    cout << que.front();
 }
