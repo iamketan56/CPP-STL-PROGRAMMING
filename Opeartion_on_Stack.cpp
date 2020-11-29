@@ -17,4 +17,7 @@ int main()
     Stack.push(3);
     Stack.push(4);
     print(Stack);
+    cout << endl;
+    cout << Stack.top();
+    cout << Stack.size();
 }
